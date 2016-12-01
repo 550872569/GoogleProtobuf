@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D9173A5D1A8F3EF6722FEC /* libPods-ProtobufGoogle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D043F62A86B605B47E0E047B /* libPods-ProtobufGoogle.a */; };
+		8D54617A1DF0235000E161A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5461791DF0235000E161A2 /* main.m */; };
+		8D54617D1DF0235000E161A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D54617C1DF0235000E161A2 /* AppDelegate.m */; };
+		8D5461801DF0235000E161A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D54617F1DF0235000E161A2 /* ViewController.m */; };
+		8D5461831DF0235000E161A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5461811DF0235000E161A2 /* Main.storyboard */; };
+		8D5461851DF0235000E161A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5461841DF0235000E161A2 /* Assets.xcassets */; };
+		8D5461881DF0235000E161A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5461861DF0235000E161A2 /* LaunchScreen.storyboard */; };
+		8D5461931DF0235100E161A2 /* ProtobufGoogleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5461921DF0235100E161A2 /* ProtobufGoogleTests.m */; };
+		8D54619E1DF0235100E161A2 /* ProtobufGoogleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D54619D1DF0235100E161A2 /* ProtobufGoogleUITests.m */; };
+		8D5461AF1DF023A500E161A2 /* DictionRecordItem.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5461AD1DF023A500E161A2 /* DictionRecordItem.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8D5461B01DF023A500E161A2 /* DictionRecordItem.proto in Resources */ = {isa = PBXBuildFile; fileRef = 8D5461AE1DF023A500E161A2 /* DictionRecordItem.proto */; };
+		ACE5E49176CBB1C42CB54B4F /* libPods-ProtobufGoogleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAE185D473392378B0EB186 /* libPods-ProtobufGoogleTests.a */; };
+		C2BD215DB09200F1FEF9F06F /* libPods-ProtobufGoogleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8BB97F028766BD5623B1E6 /* libPods-ProtobufGoogleUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D54618F1DF0235100E161A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D54616D1DF0235000E161A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5461741DF0235000E161A2;
+			remoteInfo = ProtobufGoogle;
+		};
+		8D54619A1DF0235100E161A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D54616D1DF0235000E161A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5461741DF0235000E161A2;
+			remoteInfo = ProtobufGoogle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D3CF0CBDAA6555139A13247 /* Pods-ProtobufGoogle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogle.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogle/Pods-ProtobufGoogle.release.xcconfig"; sourceTree = "<group>"; };
+		6394BA667CC08725ADFB52E0 /* Pods-ProtobufGoogleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogleUITests/Pods-ProtobufGoogleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EAE185D473392378B0EB186 /* libPods-ProtobufGoogleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProtobufGoogleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5461751DF0235000E161A2 /* ProtobufGoogle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtobufGoogle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5461791DF0235000E161A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D54617B1DF0235000E161A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8D54617C1DF0235000E161A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8D54617E1DF0235000E161A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8D54617F1DF0235000E161A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8D5461821DF0235000E161A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8D5461841DF0235000E161A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D5461871DF0235000E161A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D5461891DF0235000E161A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D54618E1DF0235100E161A2 /* ProtobufGoogleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtobufGoogleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5461921DF0235100E161A2 /* ProtobufGoogleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufGoogleTests.m; sourceTree = "<group>"; };
+		8D5461941DF0235100E161A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5461991DF0235100E161A2 /* ProtobufGoogleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtobufGoogleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D54619D1DF0235100E161A2 /* ProtobufGoogleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtobufGoogleUITests.m; sourceTree = "<group>"; };
+		8D54619F1DF0235100E161A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5461AC1DF023A500E161A2 /* DictionRecordItem.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionRecordItem.pbobjc.h; sourceTree = "<group>"; };
+		8D5461AD1DF023A500E161A2 /* DictionRecordItem.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionRecordItem.pbobjc.m; sourceTree = "<group>"; };
+		8D5461AE1DF023A500E161A2 /* DictionRecordItem.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DictionRecordItem.proto; sourceTree = "<group>"; };
+		A959E5C884831935F5802D08 /* Pods-ProtobufGoogle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogle/Pods-ProtobufGoogle.debug.xcconfig"; sourceTree = "<group>"; };
+		BF85DBD37998A794E94BEDA6 /* Pods-ProtobufGoogleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogleTests/Pods-ProtobufGoogleTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA420094EA74CC1E450AE1D1 /* Pods-ProtobufGoogleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogleUITests/Pods-ProtobufGoogleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE8BB97F028766BD5623B1E6 /* libPods-ProtobufGoogleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProtobufGoogleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D043F62A86B605B47E0E047B /* libPods-ProtobufGoogle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProtobufGoogle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E2DBFA6998EF734EA66283 /* Pods-ProtobufGoogleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogleTests/Pods-ProtobufGoogleTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5461721DF0235000E161A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D9173A5D1A8F3EF6722FEC /* libPods-ProtobufGoogle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D54618B1DF0235100E161A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE5E49176CBB1C42CB54B4F /* libPods-ProtobufGoogleTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5461961DF0235100E161A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BD215DB09200F1FEF9F06F /* libPods-ProtobufGoogleUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B57CFEEFB1FD6CC7DB6839D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D043F62A86B605B47E0E047B /* libPods-ProtobufGoogle.a */,
+				7EAE185D473392378B0EB186 /* libPods-ProtobufGoogleTests.a */,
+				CE8BB97F028766BD5623B1E6 /* libPods-ProtobufGoogleUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D54616C1DF0235000E161A2 = {
+			isa = PBXGroup;
+			children = (
+				8D5461771DF0235000E161A2 /* ProtobufGoogle */,
+				8D5461911DF0235100E161A2 /* ProtobufGoogleTests */,
+				8D54619C1DF0235100E161A2 /* ProtobufGoogleUITests */,
+				8D5461761DF0235000E161A2 /* Products */,
+				CEC7186DEB123400056E2BD6 /* Pods */,
+				6B57CFEEFB1FD6CC7DB6839D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D5461761DF0235000E161A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5461751DF0235000E161A2 /* ProtobufGoogle.app */,
+				8D54618E1DF0235100E161A2 /* ProtobufGoogleTests.xctest */,
+				8D5461991DF0235100E161A2 /* ProtobufGoogleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D5461771DF0235000E161A2 /* ProtobufGoogle */ = {
+			isa = PBXGroup;
+			children = (
+				8D5461AB1DF023A500E161A2 /* Protobuf */,
+				8D54617B1DF0235000E161A2 /* AppDelegate.h */,
+				8D54617C1DF0235000E161A2 /* AppDelegate.m */,
+				8D54617E1DF0235000E161A2 /* ViewController.h */,
+				8D54617F1DF0235000E161A2 /* ViewController.m */,
+				8D5461811DF0235000E161A2 /* Main.storyboard */,
+				8D5461841DF0235000E161A2 /* Assets.xcassets */,
+				8D5461861DF0235000E161A2 /* LaunchScreen.storyboard */,
+				8D5461891DF0235000E161A2 /* Info.plist */,
+				8D5461781DF0235000E161A2 /* Supporting Files */,
+			);
+			path = ProtobufGoogle;
+			sourceTree = "<group>";
+		};
+		8D5461781DF0235000E161A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D5461791DF0235000E161A2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D5461911DF0235100E161A2 /* ProtobufGoogleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D5461921DF0235100E161A2 /* ProtobufGoogleTests.m */,
+				8D5461941DF0235100E161A2 /* Info.plist */,
+			);
+			path = ProtobufGoogleTests;
+			sourceTree = "<group>";
+		};
+		8D54619C1DF0235100E161A2 /* ProtobufGoogleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D54619D1DF0235100E161A2 /* ProtobufGoogleUITests.m */,
+				8D54619F1DF0235100E161A2 /* Info.plist */,
+			);
+			path = ProtobufGoogleUITests;
+			sourceTree = "<group>";
+		};
+		8D5461AB1DF023A500E161A2 /* Protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				8D5461AC1DF023A500E161A2 /* DictionRecordItem.pbobjc.h */,
+				8D5461AD1DF023A500E161A2 /* DictionRecordItem.pbobjc.m */,
+				8D5461AE1DF023A500E161A2 /* DictionRecordItem.proto */,
+			);
+			path = Protobuf;
+			sourceTree = "<group>";
+		};
+		CEC7186DEB123400056E2BD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A959E5C884831935F5802D08 /* Pods-ProtobufGoogle.debug.xcconfig */,
+				3D3CF0CBDAA6555139A13247 /* Pods-ProtobufGoogle.release.xcconfig */,
+				F3E2DBFA6998EF734EA66283 /* Pods-ProtobufGoogleTests.debug.xcconfig */,
+				BF85DBD37998A794E94BEDA6 /* Pods-ProtobufGoogleTests.release.xcconfig */,
+				6394BA667CC08725ADFB52E0 /* Pods-ProtobufGoogleUITests.debug.xcconfig */,
+				CA420094EA74CC1E450AE1D1 /* Pods-ProtobufGoogleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5461741DF0235000E161A2 /* ProtobufGoogle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5461A21DF0235100E161A2 /* Build configuration list for PBXNativeTarget "ProtobufGoogle" */;
+			buildPhases = (
+				6283318349B89559DC3D0078 /* [CP] Check Pods Manifest.lock */,
+				8D5461711DF0235000E161A2 /* Sources */,
+				8D5461721DF0235000E161A2 /* Frameworks */,
+				8D5461731DF0235000E161A2 /* Resources */,
+				863B76464CF981422F9E0A9F /* [CP] Embed Pods Frameworks */,
+				BCA0A298F346D8C810B3AB95 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtobufGoogle;
+			productName = ProtobufGoogle;
+			productReference = 8D5461751DF0235000E161A2 /* ProtobufGoogle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D54618D1DF0235100E161A2 /* ProtobufGoogleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5461A51DF0235100E161A2 /* Build configuration list for PBXNativeTarget "ProtobufGoogleTests" */;
+			buildPhases = (
+				6E9624985DE2B53CE6A20CF2 /* [CP] Check Pods Manifest.lock */,
+				8D54618A1DF0235100E161A2 /* Sources */,
+				8D54618B1DF0235100E161A2 /* Frameworks */,
+				8D54618C1DF0235100E161A2 /* Resources */,
+				EC800A33EEC05AC5E5237A43 /* [CP] Embed Pods Frameworks */,
+				1624F6EE3FAE3283BB144B06 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D5461901DF0235100E161A2 /* PBXTargetDependency */,
+			);
+			name = ProtobufGoogleTests;
+			productName = ProtobufGoogleTests;
+			productReference = 8D54618E1DF0235100E161A2 /* ProtobufGoogleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D5461981DF0235100E161A2 /* ProtobufGoogleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5461A81DF0235100E161A2 /* Build configuration list for PBXNativeTarget "ProtobufGoogleUITests" */;
+			buildPhases = (
+				2E58FE1F12FCB2402976FF7E /* [CP] Check Pods Manifest.lock */,
+				8D5461951DF0235100E161A2 /* Sources */,
+				8D5461961DF0235100E161A2 /* Frameworks */,
+				8D5461971DF0235100E161A2 /* Resources */,
+				C194304BBE63D560C81F0E26 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D54619B1DF0235100E161A2 /* PBXTargetDependency */,
+			);
+			name = ProtobufGoogleUITests;
+			productName = ProtobufGoogleUITests;
+			productReference = 8D5461991DF0235100E161A2 /* ProtobufGoogleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D54616D1DF0235000E161A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = sogou;
+				TargetAttributes = {
+					8D5461741DF0235000E161A2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 294BG3N6M7;
+						ProvisioningStyle = Automatic;
+					};
+					8D54618D1DF0235100E161A2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8D5461741DF0235000E161A2;
+					};
+					8D5461981DF0235100E161A2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8D5461741DF0235000E161A2;
+					};
+				};
+			};
+			buildConfigurationList = 8D5461701DF0235000E161A2 /* Build configuration list for PBXProject "ProtobufGoogle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D54616C1DF0235000E161A2;
+			productRefGroup = 8D5461761DF0235000E161A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5461741DF0235000E161A2 /* ProtobufGoogle */,
+				8D54618D1DF0235100E161A2 /* ProtobufGoogleTests */,
+				8D5461981DF0235100E161A2 /* ProtobufGoogleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5461731DF0235000E161A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5461881DF0235000E161A2 /* LaunchScreen.storyboard in Resources */,
+				8D5461B01DF023A500E161A2 /* DictionRecordItem.proto in Resources */,
+				8D5461851DF0235000E161A2 /* Assets.xcassets in Resources */,
+				8D5461831DF0235000E161A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D54618C1DF0235100E161A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5461971DF0235100E161A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1624F6EE3FAE3283BB144B06 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtobufGoogleTests/Pods-ProtobufGoogleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E58FE1F12FCB2402976FF7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6283318349B89559DC3D0078 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9624985DE2B53CE6A20CF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		863B76464CF981422F9E0A9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtobufGoogle/Pods-ProtobufGoogle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA0A298F346D8C810B3AB95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtobufGoogle/Pods-ProtobufGoogle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C194304BBE63D560C81F0E26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtobufGoogleUITests/Pods-ProtobufGoogleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC800A33EEC05AC5E5237A43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtobufGoogleTests/Pods-ProtobufGoogleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5461711DF0235000E161A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5461801DF0235000E161A2 /* ViewController.m in Sources */,
+				8D54617D1DF0235000E161A2 /* AppDelegate.m in Sources */,
+				8D54617A1DF0235000E161A2 /* main.m in Sources */,
+				8D5461AF1DF023A500E161A2 /* DictionRecordItem.pbobjc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D54618A1DF0235100E161A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5461931DF0235100E161A2 /* ProtobufGoogleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5461951DF0235100E161A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D54619E1DF0235100E161A2 /* ProtobufGoogleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D5461901DF0235100E161A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5461741DF0235000E161A2 /* ProtobufGoogle */;
+			targetProxy = 8D54618F1DF0235100E161A2 /* PBXContainerItemProxy */;
+		};
+		8D54619B1DF0235100E161A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5461741DF0235000E161A2 /* ProtobufGoogle */;
+			targetProxy = 8D54619A1DF0235100E161A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D5461811DF0235000E161A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D5461821DF0235000E161A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8D5461861DF0235000E161A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D5461871DF0235000E161A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D5461A01DF0235100E161A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D5461A11DF0235100E161A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D5461A31DF0235100E161A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A959E5C884831935F5802D08 /* Pods-ProtobufGoogle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 294BG3N6M7;
+				INFOPLIST_FILE = ProtobufGoogle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.protobuf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8D5461A41DF0235100E161A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3CF0CBDAA6555139A13247 /* Pods-ProtobufGoogle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 294BG3N6M7;
+				INFOPLIST_FILE = ProtobufGoogle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.protobuf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8D5461A61DF0235100E161A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E2DBFA6998EF734EA66283 /* Pods-ProtobufGoogleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProtobufGoogleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.ProtobufGoogleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtobufGoogle.app/ProtobufGoogle";
+			};
+			name = Debug;
+		};
+		8D5461A71DF0235100E161A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF85DBD37998A794E94BEDA6 /* Pods-ProtobufGoogleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProtobufGoogleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.ProtobufGoogleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProtobufGoogle.app/ProtobufGoogle";
+			};
+			name = Release;
+		};
+		8D5461A91DF0235100E161A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6394BA667CC08725ADFB52E0 /* Pods-ProtobufGoogleUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ProtobufGoogleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.ProtobufGoogleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProtobufGoogle;
+			};
+			name = Debug;
+		};
+		8D5461AA1DF0235100E161A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA420094EA74CC1E450AE1D1 /* Pods-ProtobufGoogleUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ProtobufGoogleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sogou.ProtobufGoogleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProtobufGoogle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D5461701DF0235000E161A2 /* Build configuration list for PBXProject "ProtobufGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5461A01DF0235100E161A2 /* Debug */,
+				8D5461A11DF0235100E161A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D5461A21DF0235100E161A2 /* Build configuration list for PBXNativeTarget "ProtobufGoogle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5461A31DF0235100E161A2 /* Debug */,
+				8D5461A41DF0235100E161A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D5461A51DF0235100E161A2 /* Build configuration list for PBXNativeTarget "ProtobufGoogleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5461A61DF0235100E161A2 /* Debug */,
+				8D5461A71DF0235100E161A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D5461A81DF0235100E161A2 /* Build configuration list for PBXNativeTarget "ProtobufGoogleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5461A91DF0235100E161A2 /* Debug */,
+				8D5461AA1DF0235100E161A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D54616D1DF0235000E161A2 /* Project object */;
+}

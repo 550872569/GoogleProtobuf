@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+option optimize_for = LITE_RUNTIME;			
+
+message DictationRecordItem{
+
+        required int32 type = 1;           // 0:写作 1：随笔 2：采访
+        required int64 date = 2;           // 录音日期
+        required int64 lastModify = 3;     // 最近一次修改时间,客户端据修改时间排序
+        required int64 sampleCount = 4;    // 录音长度
+        
+}
