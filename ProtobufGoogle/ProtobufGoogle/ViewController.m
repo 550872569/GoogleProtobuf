@@ -36,7 +36,17 @@
     NSData * dataRecover = [NSData dataWithContentsOfFile:filePath];
     DictationRecordItem * itemRecover = [[DictationRecordItem alloc] initWithData:dataRecover error:&error];
     NSLog(@"dataRecover:%@", itemRecover);
+    
+    
+    [self showAlertWithTitle:@"SUCCESS" message:[NSString stringWithFormat:@"item: %@\n filePath: %@\n length: %ld\n itemRecover: %@\n",item,filePath,(long)[dataItem length],itemRecover]];
 }
-
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                    message:message
+                                                   delegate:nil
+                                          cancelButtonTitle:@"确定"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
 
 @end

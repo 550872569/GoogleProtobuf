@@ -18,6 +18,8 @@
 		8D54619E1DF0235100E161A2 /* ProtobufGoogleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D54619D1DF0235100E161A2 /* ProtobufGoogleUITests.m */; };
 		8D5461AF1DF023A500E161A2 /* DictionRecordItem.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5461AD1DF023A500E161A2 /* DictionRecordItem.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8D5461B01DF023A500E161A2 /* DictionRecordItem.proto in Resources */ = {isa = PBXBuildFile; fileRef = 8D5461AE1DF023A500E161A2 /* DictionRecordItem.proto */; };
+		8D5461B61DF0431000E161A2 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5461B41DF0431000E161A2 /* MBProgressHUD+Extension.m */; };
+		8D5461B71DF0431000E161A2 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D5461B51DF0431000E161A2 /* MBProgressHUD.bundle */; };
 		ACE5E49176CBB1C42CB54B4F /* libPods-ProtobufGoogleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAE185D473392378B0EB186 /* libPods-ProtobufGoogleTests.a */; };
 		C2BD215DB09200F1FEF9F06F /* libPods-ProtobufGoogleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8BB97F028766BD5623B1E6 /* libPods-ProtobufGoogleUITests.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,10 @@
 		8D5461AC1DF023A500E161A2 /* DictionRecordItem.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionRecordItem.pbobjc.h; sourceTree = "<group>"; };
 		8D5461AD1DF023A500E161A2 /* DictionRecordItem.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionRecordItem.pbobjc.m; sourceTree = "<group>"; };
 		8D5461AE1DF023A500E161A2 /* DictionRecordItem.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DictionRecordItem.proto; sourceTree = "<group>"; };
+		8D5461B11DF0414C00E161A2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8D5461B31DF0431000E161A2 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		8D5461B41DF0431000E161A2 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		8D5461B51DF0431000E161A2 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		A959E5C884831935F5802D08 /* Pods-ProtobufGoogle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogle/Pods-ProtobufGoogle.debug.xcconfig"; sourceTree = "<group>"; };
 		BF85DBD37998A794E94BEDA6 /* Pods-ProtobufGoogleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogleTests/Pods-ProtobufGoogleTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA420094EA74CC1E450AE1D1 /* Pods-ProtobufGoogleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtobufGoogleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtobufGoogleUITests/Pods-ProtobufGoogleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +156,9 @@
 		8D5461781DF0235000E161A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D5461B21DF0431000E161A2 /* MBP */,
 				8D5461791DF0235000E161A2 /* main.m */,
+				8D5461B11DF0414C00E161A2 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,6 +189,16 @@
 				8D5461AE1DF023A500E161A2 /* DictionRecordItem.proto */,
 			);
 			path = Protobuf;
+			sourceTree = "<group>";
+		};
+		8D5461B21DF0431000E161A2 /* MBP */ = {
+			isa = PBXGroup;
+			children = (
+				8D5461B31DF0431000E161A2 /* MBProgressHUD+Extension.h */,
+				8D5461B41DF0431000E161A2 /* MBProgressHUD+Extension.m */,
+				8D5461B51DF0431000E161A2 /* MBProgressHUD.bundle */,
+			);
+			path = MBP;
 			sourceTree = "<group>";
 		};
 		CEC7186DEB123400056E2BD6 /* Pods */ = {
@@ -313,6 +331,7 @@
 			files = (
 				8D5461881DF0235000E161A2 /* LaunchScreen.storyboard in Resources */,
 				8D5461B01DF023A500E161A2 /* DictionRecordItem.proto in Resources */,
+				8D5461B71DF0431000E161A2 /* MBProgressHUD.bundle in Resources */,
 				8D5461851DF0235000E161A2 /* Assets.xcassets in Resources */,
 				8D5461831DF0235000E161A2 /* Main.storyboard in Resources */,
 			);
@@ -463,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5461801DF0235000E161A2 /* ViewController.m in Sources */,
+				8D5461B61DF0431000E161A2 /* MBProgressHUD+Extension.m in Sources */,
 				8D54617D1DF0235000E161A2 /* AppDelegate.m in Sources */,
 				8D54617A1DF0235000E161A2 /* main.m in Sources */,
 				8D5461AF1DF023A500E161A2 /* DictionRecordItem.pbobjc.m in Sources */,
@@ -616,6 +636,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 294BG3N6M7;
+				GCC_PREFIX_HEADER = ProtobufGoogle/PrefixHeader.pch;
 				INFOPLIST_FILE = ProtobufGoogle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.protobuf;
@@ -629,6 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 294BG3N6M7;
+				GCC_PREFIX_HEADER = ProtobufGoogle/PrefixHeader.pch;
 				INFOPLIST_FILE = ProtobufGoogle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.protobuf;
